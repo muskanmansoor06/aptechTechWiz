@@ -1,0 +1,125 @@
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+<!-- ***** Latest Movies Start ***** -->
+<div class="page-content">
+    <div class="most-popular">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="heading-section">
+                    <h4><em>Latest Movies</em></h4>
+                </div>
+                <div class="row">
+
+                    <div class="col-lg-3 col-sm-6" onclick="showProductDetails('product1')">
+                        <div class="item">
+                            <img src="https://flxt.tmsimg.com/assets/p20201199_v_v13_am.jpg" alt="">
+                            <h4>Transformer<br><span>127 mins</span></h4>
+                            <ul>
+                                <li><i class="fa fa-star"></i>6.1</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6" onclick="showProductDetails('product1')">
+                        <div class="item">
+                            <img src="https://m.media-amazon.com/images/M/MV5BMzI0NmVkMjEtYmY4MS00ZDMxLTlkZmEtMzU4MDQxYTMzMjU2XkEyXkFqcGdeQXVyMzQ0MzA0NTM@._V1_FMjpg_UX1000_.jpg"
+                                alt="">
+                            <h4>Spider-Man<br><span>140 mins</span></h4>
+                            <ul>
+                                <li><i class="fa fa-star"></i> 8.8</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6" onclick="showProductDetails('product1')">
+                        <div class="item">
+                            <img src="https://m.media-amazon.com/images/M/MV5BMjdlZjI4YTEtNjgzZi00NTA1LWIwZWYtMDc0MzhjOWNlYjcxXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg"
+                                alt="">
+                            <h4>Insidious<br><span>107 mins</span></h4>
+                            <ul>
+                                <li><i class="fa fa-star"></i>5.6</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6" onclick="showProductDetails('product1')">
+                        <div class="item">
+                            <img src="https://m.media-amazon.com/images/M/MV5BYzE4MTllZTktMTIyZS00Yzg1LTg1YzAtMWQwZTZkNjNkODNjXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_FMjpg_UX1000_.jpg"
+                                alt="">
+                            <h4>Ninja Turtles<br><span>99 mins</span></h4>
+                            <ul>
+                                <li><i class="fa fa-star"></i> 7.9</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6" onclick="showProductDetails('product1')">
+                        <div class="item">
+                            <img src="https://www.barbie-themovie.com/images/gallery/img1.jpg"
+                                alt="">
+                            <h4>Barbie<br><span>114 min</span></h4>
+                            <ul>
+                                <li><i class="fa fa-star"></i>7.5</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6" onclick="showProductDetails('product1')">
+                        <div class="item">
+                            <img src="https://m.media-amazon.com/images/M/MV5BMDgxOTdjMzYtZGQxMS00ZTAzLWI4Y2UtMTQzN2VlYjYyZWRiXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1000_.jpg"
+                                alt="">
+                            <h4>G.O.G<br><span>150 mins</span></h4>
+                            <ul>
+                                <li><i class="fa fa-star"></i>8.0</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6" onclick="showProductDetails('product1')">
+                        <div class="item">
+                            <img src="https://pbs.twimg.com/media/FvUVt3hXgAAxP1H?format=jpg&name=900x900" alt="">
+                            <h4>Oppenheimer<br><span>180 mins</span></h4>
+                            <ul>
+                                <li><i class="fa fa-star"></i>9.5</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6" onclick="showProductDetails('product1')">
+                        <div class="item">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/0/02/Extraction_2_poster.jpg" alt="">
+                            <h4>Extraction 2<br><span>150 mins</span></h4>
+                            <ul>
+                                <li><i class="fa fa-star"></i>8.7</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ***** Latest Movies End ***** -->
+        </div>
+    </div>
+</div>
+
+
+
+
+<script>
+    function showProductDetails(productId) {
+        // Hide all product details
+        const allProductDetails = document.querySelectorAll('.product-details');
+        const allProducts = document.querySelectorAll('.product');
+        allProducts.forEach(product => product.style.display = 'none');
+        allProductDetails.forEach(details => details.style.display = 'none');
+
+        // Show the selected product's details
+        const selectedProductDetails = document.getElementById(`${productId}-details`);
+        selectedProductDetails.style.display = 'block';
+
+    }
+</script>

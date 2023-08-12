@@ -1,0 +1,143 @@
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+<title>Stream Ease</title>
+
+<!-- Bootstrap core CSS -->
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!-- OWL CAROUSEL -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" />
+
+<!-- Additional CSS Files -->
+<link rel="stylesheet" href="assets/css/fontawesome.css">
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/owl.css">
+<link rel="stylesheet" href="assets/css/animate.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+<link rel="stylesheet" href="/assets/css/style.css">
+
+<!-- BOX ICONS -->
+<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+<!-- ***** Latest Movies Start ***** -->
+<!-- <div class="page-content"> -->
+    <div class="most-popular">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="heading-section">
+                    <h4><em>Details</em></h4>
+                </div>
+                <div class="row">
+
+                    <div class="movie_card" id="bright">
+                        <div class="info_section">
+                            <div class="movie_header">
+                                <img src="https://m.media-amazon.com/images/M/MV5BZjE5ZDJmZGItMDRkNi00YjAxLTliYjQtYjBjZjk4Yjk4NjdhXkEyXkFqcGdeQXVyMTUzOTcyODA5._V1_FMjpg_UX1000_.jpg" alt="" class="picture">
+    
+                            </div>
+                            <div class="movie_desc">
+                                <h1>King the Land</h1>
+                                <h4>17 Jun 2023,N/A</h4>
+                                <span class="minute">60 min/EP</span>
+                                <p class="type">Comedy, Romance</p>
+                                <p class="text">The hotel heir and the best employee twisted to change the standard of service and undertook to implement the concept "You will be sincerely smiled at in King". </p>
+                            </div>
+                        </div>
+                        <div class="blur_back"
+                            style="background: url(https://bharatexpress.com/wp-content/uploads/2023/06/King-The-Land-1280x720.webp);">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+    
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!-- OWL CAROUSEL -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous"></script>
+<script src="assets/js/isotope.min.js"></script>
+<script src="assets/js/owl-carousel.js"></script>
+<script src="assets/js/tabs.js"></script>
+<script src="assets/js/popup.js"></script>
+<script src="assets/js/custom.js"></script>
+
+
+<script>
+    // Function to load content from another HTML file
+    function loadContent() {
+        fetch('home.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('root').innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Error loading content:', error);
+            });
+    }
+
+
+    // Function to load Genre data from another HTML file
+    function loadGenre() {
+        fetch('Genre.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('root').innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Error loading content:', error);
+            });
+    }
+
+    // Function to load Browse data from another HTML file
+    function loadMovies() {
+        fetch('movies.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('root').innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Error loading content:', error);
+            });
+    }
+    // Function to load Browse data from another HTML file
+    function loadSeries() {
+        fetch('series.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('root').innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Error loading content:', error);
+            });
+    }
+    // Function to load Browse data from another HTML file
+    function loadAnime() {
+        fetch('anime.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('root').innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Error loading content:', error);
+            });
+    }
+
+    // Call the loadContent function when the page loads
+    document.addEventListener('DOMContentLoaded', loadContent);
+    document.getElementById('home').addEventListener('click', loadContent);
+    document.getElementById('movies').addEventListener('click', loadMovies);
+    document.getElementById('anime').addEventListener('click', loadAnime);
+    document.getElementById('series').addEventListener('click', loadSeries);
+</script>
